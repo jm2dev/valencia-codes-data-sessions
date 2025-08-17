@@ -1,0 +1,57 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2025-08-15T14:26:43Z",
+      "resolved": "github:NixOS/nixpkgs/32f313e49e42f715491e1ea7b306a87c16fe0388?lastModified=1755268003&narHash=sha256-nNaeJjo861wFR0tjHDyCnHs1rbRtrMgxAKMoig9Sj%2Fw%3D"
+    },
+    "quarto@latest": {
+      "last_modified": "2025-08-09T20:54:02Z",
+      "resolved": "github:NixOS/nixpkgs/1ef586712f85b4b004caecd385d6b023e7fd2450#quarto",
+      "source": "devbox-search",
+      "version": "1.7.32",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/hn64q1sicrcn9nq581jyszjjqa8827in-quarto-1.7.32",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/hn64q1sicrcn9nq581jyszjjqa8827in-quarto-1.7.32"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dj9hjf1l6njvr691nx33j343w6cpz1ah-quarto-1.7.32",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/dj9hjf1l6njvr691nx33j343w6cpz1ah-quarto-1.7.32"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/qi3swiqhh88pwv5zvi98yk9i0l43pb26-quarto-1.7.32",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/qi3swiqhh88pwv5zvi98yk9i0l43pb26-quarto-1.7.32"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/li0xhyjqz8n2p6n9capl28jw8pfsykwp-quarto-1.7.32",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/li0xhyjqz8n2p6n9capl28jw8pfsykwp-quarto-1.7.32"
+        }
+      }
+    }
+  }
+}

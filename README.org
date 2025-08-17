@@ -1,0 +1,9 @@
+#+title: Valencia Codes Data Sessions
+
+* Overview
+
+Material for Valencia Codes data sessions.
+
+- Session 1: intro to SQL
+
+You can join our group at [[https://www.meetup.com/valencia-codes/][Valencia Codes Meetup]].

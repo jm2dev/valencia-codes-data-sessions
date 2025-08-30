@@ -4,7 +4,21 @@
     "href": "index.html",
     "title": "Data sessions",
     "section": "",
-    "text": "Data sessions\nWelcome to the Valencia Codes Data Sessions.\nSee:\n\nslides session 1\n\n\n\nAgenda\n\n\n\n\n\n\n\n\nTime\nSection\nFocus\n\n\n\n\n0–10 min\nWelcome & Icebreaker\nWhat is data? Where do we see SQL? Icebreaker Q: “When did you last use Excel?”\n\n\n10–20 min\nWhy SQL? Why not Excel?\nTalk through strengths/weaknesses of SQL vs Excel using relatable examples\n\n\n20–30 min\nIntro to Relational Databases\nTables, rows, columns, schema - use visual or draw analogy to spreadsheets\n\n\n30–40 min\nLive Demo: Set up and Naming Conventions\nLowercase, plurals, underscores vs camelCase. Create empty tables (Sales or Movies)\n\n\n40–70 min\nHands-On Lab (Core SQL): CRUD + AGG\nSee detailed breakdown below\n\n\n70–85 min\nLive Queries: Filter, Sort, Aggregate\nInteractive Q&A: “What happens if…?”, small queries as a group\n\n\n85–90 min\nCliffhanger & Tease for Session 2\nSneak peek: JOINs, building dashboards, writing better SQL"
+    "text": "Data sessions\nWelcome to the Valencia Codes Data Sessions.\nSee:\n\nslides session 1\nexercises session 1\n\n\n\nAgenda\n\n\n\n\n\n\n\n\nTime\nSection\nFocus\n\n\n\n\n0–10 min\nWelcome & Icebreaker\nWhat is data? Where do we see SQL? Icebreaker Q: “When did you last use Excel?”\n\n\n10–20 min\nWhy SQL? Why not Excel?\nTalk through strengths/weaknesses of SQL vs Excel using relatable examples\n\n\n20–30 min\nIntro to Relational Databases\nTables, rows, columns, schema - use visual or draw analogy to spreadsheets\n\n\n30–40 min\nLive Demo: Set up and Naming Conventions\nLowercase, plurals, underscores vs camelCase. Create empty tables (Sales or Movies)\n\n\n40–70 min\nHands-On Lab (Core SQL): CRUD + AGG\nSee detailed breakdown below\n\n\n70–85 min\nLive Queries: Filter, Sort, Aggregate\nInteractive Q&A: “What happens if…?”, small queries as a group\n\n\n85–90 min\nCliffhanger & Tease for Session 2\nSneak peek: JOINs, building dashboards, writing better SQL"
+  },
+  {
+    "objectID": "session-01-exercises.html",
+    "href": "session-01-exercises.html",
+    "title": "Session 01 exercises",
+    "section": "",
+    "text": "Create database\nImport CSV file\n\nsqlite3 movies.db\n.mode csv\n.import ./data/cinema_obt_2024_2025.csv cinema_obt_2024_2025\n\n\nSELECT *\nFROM cinema_obt_2024_2025\nLIMIT 5;"
+  },
+  {
+    "objectID": "session-01-exercises.html#queries",
+    "href": "session-01-exercises.html#queries",
+    "title": "Session 01 exercises",
+    "section": "",
+    "text": "SELECT *\nFROM cinema_obt_2024_2025\nLIMIT 5;"
   },
   {
     "objectID": "data-sessions.html",

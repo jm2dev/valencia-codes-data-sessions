@@ -9,6 +9,8 @@ website:
         text: Home
       - href: session-01-slides.qmd
         text: Slides
+      - href: session-01-exercises.qmd
+        text: Exercises
 format:
   html:
     theme:

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>data-sessions</title>
+<title>Session 01 exercises – data-sessions</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -90,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Slides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./session-01-exercises.html"> 
+    <a class="nav-link active" href="./session-01-exercises.html" aria-current="page"> 
 <span class="menu-text">Exercises</span></a>
   </li>  
 </ul>
@@ -117,79 +117,83 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-sessions" id="toc-data-sessions" class="nav-link active" data-scroll-target="#data-sessions">Data sessions</a></li>
-  <li><a href="#agenda" id="toc-agenda" class="nav-link" data-scroll-target="#agenda">Agenda</a></li>
+  <li><a href="#movies" id="toc-movies" class="nav-link active" data-scroll-target="#movies">Movies</a>
+  <ul class="collapse">
+  <li><a href="#queries" id="toc-queries" class="nav-link" data-scroll-target="#queries">Queries</a></li>
+  </ul></li>
+  <li><a href="#tour-de-france" id="toc-tour-de-france" class="nav-link" data-scroll-target="#tour-de-france">Tour de France</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.md"><i class="bi bi-file-code"></i>Github (GFM)</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="session-01-exercises.md"><i class="bi bi-file-code"></i>Github (GFM)</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Session 01 exercises</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="data-sessions" class="level1">
-<h1>Data sessions</h1>
-<p>Welcome to the Valencia Codes Data Sessions.</p>
-<p>See:</p>
-<ul>
-<li><a href="./session-01-slides.html">slides session 1</a></li>
-<li><a href="./session-01-exercises.html">exercises session 1</a></li>
-</ul>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="movies" class="level1">
+<h1>Movies</h1>
+<ol type="1">
+<li>Create database</li>
+<li>Import CSV file</li>
+</ol>
+<pre class="{shell}"><code>sqlite3 movies.db</code></pre>
+<pre class="{sql}"><code>.mode csv
+.import ./data/cinema_obt_2024_2025.csv cinema_obt_2024_2025</code></pre>
+<section id="queries" class="level2">
+<h2 class="anchored" data-anchor-id="queries">Queries</h2>
+<pre class="{sql}"><code>SELECT *
+FROM cinema_obt_2024_2025
+LIMIT 5;</code></pre>
+<pre class="{sql}"><code></code></pre>
+<pre class="{sql}"><code></code></pre>
 </section>
-<section id="agenda" class="level1">
-<h1>Agenda</h1>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 7%">
-<col style="width: 32%">
-<col style="width: 59%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Time</th>
-<th>Section</th>
-<th>Focus</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0–10 min</td>
-<td><strong>Welcome &amp; Icebreaker</strong></td>
-<td>What is data? Where do we see SQL? Icebreaker Q: <em>“When did you last use Excel?”</em></td>
-</tr>
-<tr class="even">
-<td>10–20 min</td>
-<td><strong>Why SQL? Why not Excel?</strong></td>
-<td>Talk through strengths/weaknesses of SQL vs Excel using relatable examples</td>
-</tr>
-<tr class="odd">
-<td>20–30 min</td>
-<td><strong>Intro to Relational Databases</strong></td>
-<td>Tables, rows, columns, schema - use visual or draw analogy to spreadsheets</td>
-</tr>
-<tr class="even">
-<td>30–40 min</td>
-<td><strong>Live Demo: Set up and Naming Conventions</strong></td>
-<td>Lowercase, plurals, underscores vs camelCase. Create empty tables (Sales or Movies)</td>
-</tr>
-<tr class="odd">
-<td>40–70 min</td>
-<td><strong>Hands-On Lab (Core SQL): CRUD + AGG</strong></td>
-<td>See detailed breakdown below</td>
-</tr>
-<tr class="even">
-<td>70–85 min</td>
-<td><strong>Live Queries: Filter, Sort, Aggregate</strong></td>
-<td>Interactive Q&amp;A: “What happens if…?”, small queries as a group</td>
-</tr>
-<tr class="odd">
-<td>85–90 min</td>
-<td><strong>Cliffhanger &amp; Tease for Session 2</strong></td>
-<td>Sneak peek: JOINs, building dashboards, writing better SQL</td>
-</tr>
-</tbody>
-</table>
+</section>
+<section id="tour-de-france" class="level1">
+<h1>Tour de France</h1>
+<pre class="{shell}"><code>sqlite3 letour.db</code></pre>
+<pre class="{sql}"><code>.mode csv
+.import ./data/TDF_Riders_History.csv tdf_riders</code></pre>
+<pre class="{sql}"><code>SELECT *
+FROM tdf_riders
+LIMIT 10;
+
+SELECT rank, rider, times
+FROM tdf_riders
+LIMIT 12;
+
+SELECT COUNT(DISTINCT(team))
+FROM tdf_riders
+WHERE year = 2025
+
+SELECT rank, rider, team
+FROM tdf_riders
+WHERE team = 'TEAM VISMALEASE A BIKE';
+
+UPDATE tdf_riders
+SET team = 'TEAM VISMA - RELEASE A BIKE'
+WHERE team = 'TEAM VISMALEASE A BIKE';
+
+SELECT team, COUNT(rank) AS riders
+FROM tdf_riders
+GROUP BY team;
+</code></pre>
 
 
 </section>

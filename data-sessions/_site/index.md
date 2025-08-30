@@ -10,6 +10,7 @@ Welcome to the Valencia Codes Data Sessions.
 See:
 
 - [slides session 1](./session-01-slides.qmd)
+- [exercises session 1](./session-01-exercises.qmd)
 
 # Agenda
 

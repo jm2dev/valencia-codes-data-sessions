@@ -1,0 +1,71 @@
+# Session 01 exercises
+
+
+- [Movies](#movies)
+  - [Queries](#queries)
+- [Tour de France](#tour-de-france)
+
+# Movies
+
+1.  Create database
+2.  Import CSV file
+
+``` {shell}
+sqlite3 movies.db
+```
+
+``` {sql}
+.mode csv
+.import ./data/cinema_obt_2024_2025.csv cinema_obt_2024_2025
+```
+
+## Queries
+
+``` {sql}
+SELECT *
+FROM cinema_obt_2024_2025
+LIMIT 5;
+```
+
+``` {sql}
+```
+
+``` {sql}
+```
+
+# Tour de France
+
+``` {shell}
+sqlite3 letour.db
+```
+
+``` {sql}
+.mode csv
+.import ./data/TDF_Riders_History.csv tdf_riders
+```
+
+``` {sql}
+SELECT *
+FROM tdf_riders
+LIMIT 10;
+
+SELECT rank, rider, times
+FROM tdf_riders
+LIMIT 12;
+
+SELECT COUNT(DISTINCT(team))
+FROM tdf_riders
+WHERE year = 2025
+
+SELECT rank, rider, team
+FROM tdf_riders
+WHERE team = 'TEAM VISMALEASE A BIKE';
+
+UPDATE tdf_riders
+SET team = 'TEAM VISMA - RELEASE A BIKE'
+WHERE team = 'TEAM VISMALEASE A BIKE';
+
+SELECT team, COUNT(rank) AS riders
+FROM tdf_riders
+GROUP BY team;
+```

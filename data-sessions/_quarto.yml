@@ -16,3 +16,5 @@ format:
       - brand
     css: styles.css
     toc: true
+  gfm:
+    toc: true

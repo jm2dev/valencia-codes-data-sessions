@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data sessions",
+    "section": "",
+    "text": "Data sessions\nWelcome to the Valencia Codes Data Sessions.\nSee:\n\nslides session 1\n\n\n\nAgenda\n\n\n\n\n\n\n\n\nTime\nSection\nFocus\n\n\n\n\n0–10 min\nWelcome & Icebreaker\nWhat is data? Where do we see SQL? Icebreaker Q: “When did you last use Excel?”\n\n\n10–20 min\nWhy SQL? Why not Excel?\nTalk through strengths/weaknesses of SQL vs Excel using relatable examples\n\n\n20–30 min\nIntro to Relational Databases\nTables, rows, columns, schema - use visual or draw analogy to spreadsheets\n\n\n30–40 min\nLive Demo: Set up and Naming Conventions\nLowercase, plurals, underscores vs camelCase. Create empty tables (Sales or Movies)\n\n\n40–70 min\nHands-On Lab (Core SQL): CRUD + AGG\nSee detailed breakdown below\n\n\n70–85 min\nLive Queries: Filter, Sort, Aggregate\nInteractive Q&A: “What happens if…?”, small queries as a group\n\n\n85–90 min\nCliffhanger & Tease for Session 2\nSneak peek: JOINs, building dashboards, writing better SQL"
+  },
+  {
+    "objectID": "data-sessions.html",
+    "href": "data-sessions.html",
+    "title": "data-sessions",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "data-sessions.html#quarto",
+    "href": "data-sessions.html#quarto",
+    "title": "data-sessions",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "session-01-slides.html#back-to-basics",
+    "href": "session-01-slides.html#back-to-basics",
+    "title": "Data sessions 01",
+    "section": "Back to Basics",
+    "text": "Back to Basics\n\nSpeaking the Language of Data: SQL\nData is power.\nSQL is the key"
+  },
+  {
+    "objectID": "session-01-slides.html#why-sql-data-still-matter-in-the-age-of-ai",
+    "href": "session-01-slides.html#why-sql-data-still-matter-in-the-age-of-ai",
+    "title": "Data sessions 01",
+    "section": "Why SQL & Data still matter in the Age of AI",
+    "text": "Why SQL & Data still matter in the Age of AI\n\n\n\nFoundation of AI\n\nSQL provides the structure AI models rely on.\n\nData Quality = Trust\n\nEnsures reliable insights and predictions\n\nScalability & Business Value\n\nTranslates data into revenue & decisions\n\nHuman Oversight\n\nLets humans interrogate numbers directly\n\nUniversal Skillset\n\nCritical across industries and tools.\n\n\n\n\n\n\nDecisions\n\n\nAI\n\n\nAnalytics\n\n\nSQL\n\n\nData"
+  },
+  {
+    "objectID": "session-01-slides.html#why-a-database-and-not-just-excel",
+    "href": "session-01-slides.html#why-a-database-and-not-just-excel",
+    "title": "Data sessions 01",
+    "section": "Why a Database? (and Not Just Excel)",
+    "text": "Why a Database? (and Not Just Excel)\n\nScalability: Excel slows down with thousands of rows.\n\nDatabases handle millions to billions efficiently.\n\nData Integrity: Databases enforce rules (types, constraints, relationships).\n\nExcel relies on manual discipline → error-prone.\n\nMulti-User Access: Databases allow many people to query and update data at once.\n\nExcel struggles with collaboration and version control.\n\nSecurity & Governance: Fine-grained access controls and audit trails in databases\n\nExcel has limited protection.\n\nAutomation & Integration"
+  },
+  {
+    "objectID": "session-01-slides.html#types-of-databases",
+    "href": "session-01-slides.html#types-of-databases",
+    "title": "Data sessions 01",
+    "section": "Types of databases",
+    "text": "Types of databases\n\n\n\nRDBMS\nColumnar\nNoSQL\n\n\n\n\nPostgres\nRedshift\nMarkLogic\n\n\nMySQL\nSnowflake\nMongoDB\n\n\nMSSQL\nBig Query\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nAnd many others (which are less important! 😜 )"
+  },
+  {
+    "objectID": "session-01-slides.html#sql-query-order-execution",
+    "href": "session-01-slides.html#sql-query-order-execution",
+    "title": "Data sessions 01",
+    "section": "SQL query order execution",
+    "text": "SQL query order execution\n\nSyntaxWhat actually happens…\n\n\nSELECT ...\nFROM ...\nJOIN ... ON ...\nWHERE ...\nGROUP BY ...\nHAVING ...\nWINDOW ...\nORDER BY ...\nLIMIT/OFFSET\n\n\n\nFROM (base tables, subqueries, CTEs are bound)\nJOIN … ON (row matching; for outer joins, unmatched outer rows are kept)\nAdd outer rows (LEFT/RIGHT/FULL OUTER effect realized)\nWHERE (filters rows; window/aggregate not allowed here)\nGROUP BY (rows collapse into groups)\nHAVING (filters groups)\nWINDOW / analytic functions (computed over the post-group result)\nSELECT (expressions evaluated; aliases created)\nDISTINCT (deduplicate selected rows)\nORDER BY (can refer to aliases or column positions)\nLIMIT/OFFSET (top-N / pagination)"
+  },
+  {
+    "objectID": "session-01-slides.html#sql-best-practices-for-beginners",
+    "href": "session-01-slides.html#sql-best-practices-for-beginners",
+    "title": "Data sessions 01",
+    "section": "SQL best practices for beginners",
+    "text": "SQL best practices for beginners\n\nClarityBe explicitFilterBe consistent\n\n\nWrite Clear & Readable Queries\n\nUse uppercase for SQL keywords (SELECT, WHERE, JOIN) and lowercase for tables/columns → improves readability.\nIndent and format queries so logic is easy to follow.\nAdd comments (– this filters active customers) for clarity.\n\n\n\nAlways Select Explicitly\n\nAvoid SELECT * in production queries.\nIt’s fine for exploration, but always name columns to:\n\nImprove performance.\nPrevent errors if schemas change.\nMake results self-explanatory.\n\n\n\n\nFilter Data Thoughtfully\n\nUse WHERE clauses early to avoid scanning unnecessary rows.\nPrefer = and IN where possible over LIKE if not searching text.\nBe mindful of NULL values (IS NULL vs = NULL).\n\n\n\nConsistency Matters\n\nDecide on a style guide (snake_case vs camelCase, singular vs plural table names).\nStick to it so queries are predictable."
+  },
+  {
+    "objectID": "session-01-slides.html#q-a",
+    "href": "session-01-slides.html#q-a",
+    "title": "Data sessions 01",
+    "section": "Q & A",
+    "text": "Q & A"
+  }
+]

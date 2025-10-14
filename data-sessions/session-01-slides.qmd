@@ -1,0 +1,136 @@
+---
+title: Data sessions 01
+subtitle: Valencia Codes
+author: Immy & José Miguel
+format:
+  revealjs:
+    smaller: true
+---
+
+## Back to Basics
+
+- Speaking the Language of Data: SQL
+- Data is power.
+- SQL is the key
+
+## Why SQL & Data still matter in the Age of AI
+
+::::{.columns}
+::: {.column width=80%}
+
+- **Foundation of AI**
+  + SQL provides the structure AI models rely on.
+- **Data Quality = Trust**
+  + Ensures reliable insights and predictions
+- **Scalability & Business Value**
+  + Translates data into revenue & decisions
+- **Human Oversight**
+  + Lets humans interrogate numbers directly
+- **Universal Skillset**
+  + Critical across industries and tools.
+:::
+
+::: {.column width=20%}
+|           |
+|:---------:|
+| Decisions |
+| AI        |
+| Analytics |
+| SQL       |
+| Data      |
+:::
+::::
+
+## Why a Database? (and Not Just Excel)
+
+- **Scalability**: Excel slows down with thousands of rows.
+  - Databases handle millions to billions efficiently.
+- **Data Integrity**: Databases enforce rules (types, constraints, relationships).
+  - Excel relies on manual discipline → error-prone.
+- **Multi-User Access**: Databases allow many people to query and update data at once.
+  - Excel struggles with collaboration and version control.
+- **Security & Governance**: Fine-grained access controls and audit trails in databases
+  - Excel has limited protection.
+- **Automation & Integration**
+
+## Types of databases
+
+| RDBMS    | Columnar  | NoSQL     |
+|----------|-----------|-----------|
+| Postgres | Redshift  | MarkLogic |
+| MySQL    | Snowflake | MongoDB   |
+| MSSQL    | Big Query |           |
+
+::: {.callout-tip}
+And many others (which are less important! 😜 )
+:::
+
+## SQL query order execution
+
+::: {.panel-tabset}
+
+### Syntax
+
+```sql
+SELECT ...
+FROM ...
+JOIN ... ON ...
+WHERE ...
+GROUP BY ...
+HAVING ...
+WINDOW ...
+ORDER BY ...
+LIMIT/OFFSET
+```
+
+### What actually happens...
+
+1. FROM (base tables, subqueries, CTEs are bound)
+1. JOIN … ON (row matching; for outer joins, unmatched outer rows are kept)
+1. Add outer rows (LEFT/RIGHT/FULL OUTER effect realized)
+1. WHERE (filters rows; window/aggregate not allowed here)
+1. GROUP BY (rows collapse into groups)
+1. HAVING (filters groups)
+1. WINDOW / analytic functions (computed over the post-group result)
+1. SELECT (expressions evaluated; aliases created)
+1. DISTINCT (deduplicate selected rows)
+1. ORDER BY (can refer to aliases or column positions)
+1. LIMIT/OFFSET (top-N / pagination)
+:::
+
+## SQL best practices for beginners
+
+::: {.panel-tabset}
+
+### Clarity
+#### Write Clear & Readable Queries
+
+- Use uppercase for SQL keywords (SELECT, WHERE, JOIN) and lowercase for tables/columns → improves readability.
+- Indent and format queries so logic is easy to follow.
+- Add comments (-- this filters active customers) for clarity.
+
+### Be explicit
+#### Always Select Explicitly
+
+- Avoid SELECT * in production queries.
+- It’s fine for exploration, but always name columns to:
+  - Improve performance.
+  - Prevent errors if schemas change.
+  - Make results self-explanatory.
+
+### Filter
+#### Filter Data Thoughtfully
+
+- Use WHERE clauses early to avoid scanning unnecessary rows.
+- Prefer = and IN where possible over LIKE if not searching text.
+- Be mindful of NULL values (IS NULL vs = NULL).
+
+### Be consistent
+#### Consistency Matters
+
+- Decide on a style guide (snake_case vs camelCase, singular vs plural table names).
+- Stick to it so queries are predictable.
+
+:::
+
+## Q & A

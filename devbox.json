@@ -1,6 +1,10 @@
 {
-  "$schema":  "https://raw.githubusercontent.com/jetify-com/devbox/0.15.1/.schema/devbox.schema.json",
-  "packages": ["quarto@latest"],
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.15.1/.schema/devbox.schema.json",
+  "packages": [
+    "quarto@latest",
+    "sqlite@latest",
+    "dbeaver-bin@latest"
+  ],
   "shell": {
     "init_hook": [
       "echo 'Welcome to devbox!' > /dev/null"

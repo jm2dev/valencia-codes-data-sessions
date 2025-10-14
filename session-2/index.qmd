@@ -1,0 +1,7 @@
+# Data sessions
+
+Welcome to the Valencia Codes Data Sessions.
+
+See:
+
+- [slides session 2](./session-02-slides.qmd)

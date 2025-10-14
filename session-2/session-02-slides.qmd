@@ -1,0 +1,31 @@
+---
+title: Data sessions 02
+subtitle: Valencia Codes
+author: Immy & José Miguel
+format:
+  revealjs:
+    smaller: true
+    logo: logo.avif
+    footer: "Back to basics: data sessions"
+---
+
+## About {background-color="red"}
+
+Valencia Codes aims to be the biggest English-language technology community in Valencia. The technology sector in Valencia has been growing in recent years and international companies and workers are taking an increasingly important role. We aim to provide the no.1 place in Valencia for software developers to meet, learn and discuss technology.
+
+Join our Telegram channel to continue the conversation:
+<https://t.me/valenciacodes>
+
+## Back to Basics
+
+- Speaking the Language of Data: SQL
+- Data is power.
+- SQL is the key
+
+## Plan
+
+- Go to our [metabase](http://ec2-34-244-99-202.eu-west-1.compute.amazonaws.com:3000) instance.
+
+- Draw some graphics from data
+
+## Q & A

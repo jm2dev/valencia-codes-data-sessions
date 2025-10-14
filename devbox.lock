@@ -1,6 +1,54 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "dbeaver-bin@latest": {
+      "last_modified": "2025-08-09T20:54:02Z",
+      "resolved": "github:NixOS/nixpkgs/1ef586712f85b4b004caecd385d6b023e7fd2450#dbeaver-bin",
+      "source": "devbox-search",
+      "version": "25.1.4",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/wlw35mxwvd3nb13fjdklnpgagaw4hx68-dbeaver-bin-25.1.4",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/wlw35mxwvd3nb13fjdklnpgagaw4hx68-dbeaver-bin-25.1.4"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/16hl210ghwa2bl0yaq0mvl2y0wacbvnd-dbeaver-bin-25.1.4",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/16hl210ghwa2bl0yaq0mvl2y0wacbvnd-dbeaver-bin-25.1.4"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/39b68dnggl3w6niz1n3m288n8d66i1rf-dbeaver-bin-25.1.4",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/39b68dnggl3w6niz1n3m288n8d66i1rf-dbeaver-bin-25.1.4"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ancxvqf528z4rx8c2gjm98qanilkc3wz-dbeaver-bin-25.1.4",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ancxvqf528z4rx8c2gjm98qanilkc3wz-dbeaver-bin-25.1.4"
+        }
+      }
+    },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "last_modified": "2025-08-15T14:26:43Z",
       "resolved": "github:NixOS/nixpkgs/32f313e49e42f715491e1ea7b306a87c16fe0388?lastModified=1755268003&narHash=sha256-nNaeJjo861wFR0tjHDyCnHs1rbRtrMgxAKMoig9Sj%2Fw%3D"
